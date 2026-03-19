@@ -5,19 +5,23 @@
 }
 
 .menuItem {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .menuLink {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color: var(--text-body);
+  font-size: 15px;
+  font-weight: 600;
   display: block;
-  padding: 8px 16px;
-  transition: background-color 0.3s ease;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .menuLink:hover {
-  background-color: #444;
-  color: #ddd;
+  background-color: #fff7ec;
+  border-color: var(--line-strong);
+  color: var(--text-strong);
 }

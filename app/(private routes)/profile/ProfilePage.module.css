@@ -3,25 +3,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px;
+  padding: 2rem 1rem;
 }
 
 .profileCard {
-  max-width: 500px;
+  max-width: 560px;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 24px;
+  background-color: #fffdf8;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+  padding: 26px;
   text-align: left;
 }
 
 .formTitle {
-  font-size: 32px;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-strong);
   margin-bottom: 24px;
   text-align: left;
+  letter-spacing: -0.02em;
 }
 
 .avatarWrapper {
@@ -36,11 +38,11 @@
 }
 
 .profileInfo {
-  font-size: 18px;
-  color: #333;
+  font-size: 17px;
+  color: var(--text-body);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: flex-start;
 }
 
@@ -59,17 +61,17 @@
 }
 
 .editProfileButton {
-  padding: 8px 16px;
-  font-size: 16px;
+  padding: 9px 16px;
+  font-size: 15px;
   font-weight: 600;
-  background-color: #0d6efd;
+  background-color: var(--accent);
   color: white;
-  border-radius: 6px;
+  border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .editProfileButton:hover {
-  background-color: #0b5ed7;
+  background-color: var(--accent-strong);
 }

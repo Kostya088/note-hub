@@ -1,26 +1,28 @@
 .mainContent {
   flex: 1;
+  padding: 1rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 400px;
-  margin: 40px auto;
+  max-width: 440px;
+  margin: 40px auto 20px;
   padding: 24px;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
 }
 
 .formTitle {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: 8px;
-  color: #212529;
+  margin-bottom: 12px;
+  color: var(--text-strong);
 }
 
 .formGroup {
@@ -28,15 +30,21 @@
   flex-direction: column;
   font-size: 14px;
   font-weight: 500;
-  color: #212529;
+  color: var(--text-strong);
 }
 
 .input {
   margin-top: 4px;
-  padding: 8px 12px;
+  padding: 10px 12px;
   font-size: 14px;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(201, 111, 76, 0.15);
+  outline: none;
 }
 
 .actions {
@@ -46,27 +54,27 @@
 }
 
 .submitButton {
-  padding: 8px 16px;
+  padding: 10px 18px;
   font-size: 16px;
-  background-color: #0d6efd;
+  background-color: var(--accent);
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 999px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  font-weight: 600;
 }
 
 .submitButton:hover {
-  background-color: #0d6efd;
+  background-color: var(--accent-strong);
 }
 
 .submitButton:disabled {
-  background-color: #b1c7ae;
+  background-color: #bda795;
   cursor: not-allowed;
 }
 
 .error {
-  color: #dc3545;
+  color: var(--danger);
   font-size: 12px;
   margin-top: 4px;
   text-align: center;

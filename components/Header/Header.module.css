@@ -3,19 +3,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: rgba(255, 248, 236, 0.82);
+  color: var(--text-strong);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .brandLink {
   text-decoration: none;
-  color: white;
+  color: var(--text-strong);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .brandLink:hover {
-  color: #ddd;
+  color: var(--accent);
 }
 
 .navigation {
@@ -25,6 +31,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation li {
@@ -34,10 +41,31 @@
 
 .navigation li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-body);
   font-size: 1rem;
+  font-weight: 500;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
 }
 
 .navigation li a:hover {
-  color: #ddd;
+  color: var(--text-strong);
+  background-color: var(--accent-soft);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.9rem 1rem;
+    gap: 0.8rem;
+  }
+
+  .brandLink {
+    font-size: 1.25rem;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.4rem;
+  }
 }

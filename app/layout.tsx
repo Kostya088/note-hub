@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import TanStackProvider from "@/components/TanStackProvider/TanStackProvider";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
 
-const roboto = Roboto({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-roboto",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-base",
   display: "swap",
 });
 
@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>
+      <body className={manrope.variable}>
         <TanStackProvider>
           <AuthProvider>
             <Header />
