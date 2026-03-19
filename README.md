@@ -25,48 +25,41 @@ focused.
 
 The application allows users to:
 
-- register and sign in;
-- browse notes by tag;
-- search notes by keyword;
-- paginate through note collections;
-- open note previews in a modal;
-- open full note detail pages;
-- create new notes;
-- delete existing notes;
-- view and edit profile information.
+create and manage personal notes in one place, with authentication, tag-based
+organization, keyword search, pagination, quick modal previews, full note
+detail pages, and basic profile management.
 
 ## Features
 
-- Authentication flow with sign-in, sign-up, logout, and protected routes.
-- Notes dashboard with search, tag-based filtering, and pagination.
-- Dedicated note detail pages with direct routing.
-- Intercepted modal route for note preview without leaving the list view.
-- Create note form with persistent draft state.
-- Profile page with editable user information.
-- Server-side and client-side data fetching depending on the route.
-- Responsive UI built with CSS Modules and a shared global design system.
+NoteHub combines protected user flows with a practical note-management
+interface. Authenticated users can browse notes in a paginated dashboard,
+filter them by tag, search by keyword, open quick previews in a modal, navigate
+to dedicated note pages, create new notes, remove old ones, and update profile
+information. The application also mixes server-rendered and client-rendered
+data fetching to keep navigation responsive while preserving direct-route
+support.
 
 ## Tech Stack
 
 - Core:
-  - Next.js 16
-  - React 19
-  - TypeScript
+  - [Next.js 16](https://nextjs.org/)
+  - [React 19](https://react.dev/)
+  - [TypeScript](https://www.typescriptlang.org/)
 - Data and state:
-  - TanStack React Query
-  - Zustand
+  - [TanStack React Query](https://tanstack.com/query/latest)
+  - [Zustand](https://zustand-demo.pmnd.rs/)
 - Forms and validation:
-  - Formik
-  - Yup
+  - [Formik](https://formik.org/)
+  - [Yup](https://github.com/jquense/yup)
 - Networking and utilities:
-  - Axios
-  - cookie
-  - use-debounce
-  - react-paginate
+  - [Axios](https://axios-http.com/)
+  - [cookie](https://www.npmjs.com/package/cookie)
+  - [use-debounce](https://github.com/xnimorz/use-debounce)
+  - [react-paginate](https://github.com/AdeleD/react-paginate)
 - Styling and tooling:
-  - CSS Modules
-  - ESLint
-  - modern-normalize
+  - [CSS Modules](https://github.com/css-modules/css-modules)
+  - [ESLint](https://eslint.org/)
+  - [modern-normalize](https://github.com/sindresorhus/modern-normalize)
 
 ## Project Structure
 
