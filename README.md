@@ -23,9 +23,7 @@ routes, server-rendered pages, and client-side interactivity. It provides a
 simple workflow for managing personal notes while keeping the interface fast and
 focused.
 
-The application allows users to:
-
-create and manage personal notes in one place, with authentication, tag-based
+The application allows users to create and manage personal notes in one place, with authentication, tag-based
 organization, keyword search, pagination, quick modal previews, full note
 detail pages, and basic profile management.
 
